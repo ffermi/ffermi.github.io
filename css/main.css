@@ -1,9 +1,9 @@
 :root {
   --background-color: #081826;
-  --text-primary-color: #5681A6;
+  --text-primary-color: #5681a6;
   --text-secondary-color: #083359;
-  --accent-primary-color: #F2D5BB;
-  --accent-secondary-color: #D98977;
+  --accent-primary-color: #f2d5bb;
+  --accent-secondary-color: #d98977;
 }
 
 html {
@@ -12,47 +12,45 @@ html {
 
 body {
   display: flex;
-  flex-direction: column; 
-  min-height: 100vh; 
+  flex-direction: column;
+  min-height: 100vh;
   background-color: var(--background-color);
   color: var(--text-primary-color);
 }
 
-main{
+main {
   flex-grow: 1;
   align-items: center;
   padding: 3rem;
 }
 
-footer{
+footer {
   margin-top: auto; /* Pushes the footer to the bottom */
-  
   padding: 1rem;
-
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: center;
 }
 
 h1 {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3.3rem;
 }
 
 h3 {
-  font-size: 2rem;
   font-weight: 400;
 }
 
 .hero > h3 {
+  font-size: 1.5rem;
   color: var(--text-secondary-color);
 }
 
 .social > h3 {
+  font-size: 2rem;
   color: var(--text-primary-color) !important;
   padding-bottom: 1rem;
 }
-
 
 ul {
   padding: 0;
@@ -75,13 +73,12 @@ li {
   padding-top: 10vh;
 }
 
-
 .icon {
   display: inline;
   height: 2rem;
 }
 
-.accent-color{
+.accent-color {
   color: var(--accent-secondary-color);
 }
 
@@ -91,17 +88,22 @@ li {
 
 #dot {
   color: var(--accent-secondary-color);
-} 
+}
 
 @media (orientation: landscape) and (max-width: 1024px) {
-  main{
+  main {
     padding: 0;
   }
-  .hero{
+  
+  .container {
+    justify-content: center;
+  }
+
+  .hero {
     padding-top: 30vh;
   }
 
   .social {
     padding: 35vh 0;
-  } 
+  }
 }
