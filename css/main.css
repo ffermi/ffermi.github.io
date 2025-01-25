@@ -1,0 +1,98 @@
+:root {
+  --background-color: #081826;
+  --text-primary-color: #5681A6;
+  --text-secondary-color: #083359;
+  --accent-primary-color: #F2D5BB;
+  --accent-secondary-color: #D98977;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  background-color: var(--background-color);
+  color: var(--text-primary-color);
+}
+
+main{
+  flex-grow: 1;
+  align-items: center;
+  padding: 3rem;
+}
+
+footer{
+  margin-top: auto; /* Pushes the footer to the bottom */
+  
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.container {
+  justify-self: center;
+}
+
+.hero {
+  padding-top: 20vh;
+}
+
+.social {
+  padding-top: 10vh;
+}
+
+
+.icon {
+  display: inline;
+  height: 2rem;
+}
+
+.accent-color{
+  color: var(--accent-secondary-color);
+}
+
+#love {
+  height: 1rem;
+}
+
+#dot {
+  color: var(--accent-secondary-color);
+} 
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  main{
+    padding: 0;
+  }
+  .hero{
+    padding-top: 30vh;
+  }
+
+  .social {
+    padding: 35vh 0;
+  } 
+}
