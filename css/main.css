@@ -42,8 +42,17 @@ h1 {
 h3 {
   font-size: 2rem;
   font-weight: 400;
+}
+
+.hero > h3 {
   color: var(--text-secondary-color);
 }
+
+.social > h3 {
+  color: var(--text-primary-color) !important;
+  padding-bottom: 1rem;
+}
+
 
 ul {
   padding: 0;
